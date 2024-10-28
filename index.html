@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
+
 <body>
-    <header>
-        <img src="coollogo_com-256852687.gif" width="25%">
-    </header>
-    <main class="caixa">
-        <h1 class="textocaixa"> bazinga bazinga </h1>
-    </main>
+    <div class="background">
+        <header>
+            <img src="cooltext468790152493805.gif" width="25%">
+        </header>
+        <main class="caixa">
+            <p class="textocaixa"> Eu me chamo Pedro e esse é o meu portfolio de websites! Aqui está o meu perfil no <a
+                    href="https://github.com/pdrk67">Github.</a> E logo abaixo alguns projetos. </p>
+        </main>
+        <div class="caixaprojetos1"> <img src="cooltext468790130665173.gif"> </div>
+
+        <div class="caixaprincipal">
+            <div class="caixadireita"> <img src="image1.png" width="100%">
+                <p>Site feito com o propósito x</p>
+                <button id="botaoD" class="botaod" onclick="createBox(1)"> Código </button>
+                <div id="conteudoD"> penis </div>
+            </div>
+            <div class="caixaesquerda"> <img src="image.png" width="100%">
+                <p>Site feito com o propósito y</p>
+                <button id="botaoE" class="botaoe" onclick="createBox(2)"> Código </button>
+                <div id="conteudoE"> penis </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="script.js"></script>
+
 </html>
