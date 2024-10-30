@@ -1,26 +1,25 @@
-function createBox(buttonNumber) {
-    const container = document.getElementById('conteudoE');
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById('botaohover');
+    const elementsToDisable = [
+        document.querySelector('header'),
+        document.querySelector('.caixa'),
+        document.querySelector('.caixaesquerda'),
+        document.querySelector('.caixadireita'),
+        document.querySelector('footer')
+    ];
+    let hoversDisabled = false;
 
-    const newBox = document.createElement('div');
-    newBox.classList.add('box');
+    button.addEventListener('click', () => {
+        hoversDisabled = !hoversDisabled;
 
-    if (buttonNumber === 1) {
-        newBox.innerHTML = `<p> mande ajuda </p>`
-    } else if (buttonNumber === 2) {
-        newBox.innerHTML = `<p> mande ajuda 2 </p>`
-    }
+        elementsToDisable.forEach(element => {
+            if (hoversDisabled) {
+                element.classList.add('desativaroshovers');
+            } else {
+                element.classList.remove('desativaroshovers');
+            }
+        });
 
-    container.appendChild(newBox);
-
-    setTimeout(() => {
-        newBox.classList.add('show');
-    }, 10);
-
-    setTimeout(() => {
-        newBox.classList.add('hide'); // Adiciona a classe 'hide' para desaparecer
-        // Remove a caixa do DOM após a transição de desaparecimento (0.5s)
-        setTimeout(() => {
-            newBox.remove();
-        }, 500); // Espera o tempo da animação de desaparecimento (0.5s)
-    }, 5000); // Espera 5 segundos antes de começar a desaparecer
-}
+        button.textContent = hoversDisabled ? "Ativar Hovers" : "Desativar Hovers";
+    });
+});

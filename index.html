@@ -5,36 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="imagens/1a32eec0db93f5fddc3963a571d997d9.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="background">
-        <header>
-            <img src="cooltext468790152493805.gif" width="25%">
-        </header>
-        <main class="caixa">
-            <p class="textocaixa"> Eu me chamo Pedro e esse é o meu portfolio de websites! Aqui está o meu perfil no <a
-                    href="https://github.com/pdrk67">Github.</a> E logo abaixo alguns projetos. </p>
-        </main>
-        <div class="caixaprojetos1"> <img src="cooltext468790130665173.gif"> </div>
+    <div class="desativarohover">
+        <button class="botaohover" id="botaohover"> Desativar os hovers. </button>
+    </div>
+    <header>
+        <h1 class="cabecalho"> Pedro M. B. Lopes, fazedor de websites. </h1>
+        <img src="imagens/1a32eec0db93f5fddc3963a571d997d9.jpg" width="50%">
+    </header>
+    <main class="caixa">
+        <p> Eu me chamo Pedro e esse é o meu portfolio de websites! Aqui está o meu perfil no <a
+                href="https://github.com/pdrk67">Github.</a> E logo abaixo alguns projetos. </p>
+    </main>
 
-        <div class="caixaprincipal">
-            <div class="caixadireita"> <img src="image1.png" width="100%">
-                <p>Site feito com o propósito x</p>
-                <button id="botaoD" class="botaod" onclick="createBox(1)"> Código </button>
-                <div id="conteudoD"> penis </div>
+    <div class="caixaprincipal">
+        <div class="caixadireita"> <img src="imagens/image1.png" width="100%">
+            <div class="textodireito">
+                <p>O site acima foi feito para a barbearia alura, projeto de um curso que eu conclui, o código foi feito
+                    com html e css.</p>
+                <a href="">Github.</a>
             </div>
-            <div class="caixaesquerda"> <img src="image.png" width="100%">
-                <p>Site feito com o propósito y</p>
-                <button id="botaoE" class="botaoe" onclick="createBox(2)"> Código </button>
-                <div id="conteudoE"> penis </div>
+            <!-- <button id="botaoD" class="botaod" onclick="createBox(1)"> Código </button>
+                <div id="conteudoD"> asdfas </div> -->
+        </div>
+        <div class="caixaesquerda"> <img src="imagens/image.png" width="100%">
+            <div class="textoesquerdo">
+                <p>O site acima foi um trabalho de projeto de vida, o código foi feito com html e css. </p>
+                <a href="">Github.</a>
             </div>
+            <!--  <button id="botaoE" class="botaoe" onclick="createBox(2)"> Código </button>
+                <div id="conteudoE"> asdfas </div> -->
         </div>
     </div>
+
+    <footer>
+        <p class="textofooter"> more projects soon (hopefully), made by pdrk. </p>
+    </footer>
 </body>
 
 <script src="script.js"></script>

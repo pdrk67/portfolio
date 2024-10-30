@@ -3,20 +3,47 @@
     margin: 0;
 }
 
+.desativarohover {
+    display: flex;
+    justify-content: center;
+    background-color: #00843D;
+    border: 2px solid black;
+    margin: 20px;
+    transition: background-color 0.3s;
+}
+
+.botaohover {
+    color: black;
+    background-color: #00843D;
+    border: 0px solid black;
+    font-size: 150%;
+    font-family: 'roboto';
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.desativaroshovers {
+    pointer-events: none;
+    color: black;
+}
+
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    background-color: #00843D;
+    border: 2px solid black;
+    margin: 10px;
+    transition: background-color 0.3s;
 }
 
-.background {
-    background-image: url(3ax4l35rbp861.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+.cabecalho {
+    padding: 100px;
+}
+
+body {
+    background-color: #00843D;
 }
 
 .caixa {
@@ -24,21 +51,28 @@ header {
     justify-content: center;
     align-items: center;
     padding: 100px;
-    border-radius: 10px;
-    background-color: #e6dfcc;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: #00843D;
+    transition: background-color 0.3s;
 }
 
-.textocaixa {
-    font-family: 'Afacad Flux';
+p {
+    font-family: 'roboto';
     font-size: 150%;
+    font-weight: 700;
 }
 
-.caixaprojetos1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+a {
+    font-family: 'roboto';
+    font-size: 150%;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'roboto';
+    font-size: 150%;
+    font-weight: 700;
 }
 
 .caixaprincipal {
@@ -46,85 +80,41 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: 10px;
 }
 
-.caixaesquerda {
-    width: 50%;
-    height: 60vh;
-    background-color: #e6dfcc;
-    border-radius: 10px;
-}
-
+.caixaesquerda,
 .caixadireita {
     width: 50%;
     height: 60vh;
-    background-color: #e6dfcc;
-    border-radius: 10px;
+    background-color: #00843D;
+    border: 2px solid black;
+    transition: background-color 0.3s;
 }
 
-.botaoe {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.textoesquerdo,
+.textodireito {
+    padding: 50px;
 }
 
-.botaod {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+header:hover,
+.caixa:hover,
+.caixaesquerda:hover,
+.caixadireita:hover,
+footer:hover {
+    background-color: #000000;
+    color: #00843D;
 }
 
-button:hover {
-    background-color: blue;
-}
-
-#conteudoE {
-    margin-top: 20px;
-    width: 100%;
+footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    background-color: #00843D;
+    border: 2px solid black;
+    margin: 20px;
+    transition: background-color 0.3s;
 }
 
-#counteudoD {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.textofooter {
+    padding: 50px;
 }
-
-
-.box {
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
-
-.show {
-    opacity: 1;
-}
-
-.hide {
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
