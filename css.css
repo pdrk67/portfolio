@@ -57,10 +57,6 @@ body {
     transition: background-color 0.3s;
 }
 
-.textocaixa {
-    margin-right: 150px;
-}
-
 p {
     font-family: 'roboto';
     font-size: 150%;
@@ -99,7 +95,7 @@ h1 {
 .caixaesquerda,
 .caixadireita {
     width: 50%;
-    height: 60vh;
+    height: 100vh;
     background-color: #00843D;
     border: 2px solid black;
     transition: background-color 0.3s;
