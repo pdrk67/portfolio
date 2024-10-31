@@ -57,6 +57,10 @@ body {
     transition: background-color 0.3s;
 }
 
+.textocaixa {
+    margin-right: 150px;
+}
+
 p {
     font-family: 'roboto';
     font-size: 150%;
@@ -67,6 +71,15 @@ a {
     font-family: 'roboto';
     font-size: 150%;
     font-weight: 700;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
 }
 
 h1 {
@@ -97,6 +110,7 @@ h1 {
     padding: 50px;
 }
 
+a:hover,
 header:hover,
 .caixa:hover,
 .caixaesquerda:hover,
@@ -109,6 +123,7 @@ footer:hover {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #00843D;
     border: 2px solid black;
     margin: 20px;
